@@ -1,6 +1,6 @@
 #for AWINIC AW8697 Haptic
 #ifdef OPLUS_FEATURE_CHG_BASIC
-ifeq ($(strip $(BRAND_SHOW_FLAG)), oneplus)
+ifeq ($(strip $(BRAND_SHOW_FLAG)), realme)
 	ccflags-y += -DCONFIG_OPLUS_HAPTIC_OOS
 else ifeq ($(strip $(CONFIG_OPLUS_CHG_OOS)), y)
 	ccflags-y += -DCONFIG_OPLUS_HAPTIC_OOS
