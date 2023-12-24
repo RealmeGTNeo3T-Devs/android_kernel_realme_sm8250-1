@@ -560,6 +560,7 @@ static inline int dvb_dmx_swfilter_payload(struct dvb_demux_feed *feed,
 		feed->pes_ts_packets_num++;
 		feed->peslen += count;
 	}
+	feed->cc = cc;
 
 	return ret;
 }
